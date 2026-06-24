@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuAI - AI writing from any app</title>
+    <meta
+      name="description"
+      content="QuAI is a lightweight desktop writing assistant for macOS and Windows. Correct, rewrite, translate, and refine selected text with Gemini or private offline models."
+    >
+    <meta name="theme-color" content="#12141d">
+    <meta property="og:title" content="QuAI - AI writing from any app">
+    <meta property="og:description" content="Correct, rewrite, translate, and refine selected text with Gemini or private offline models.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quai.leehack.com/">
+    <meta property="og:image" content="https://quai.leehack.com/assets/quai-icon.png">
+    <link rel="icon" href="/assets/quai-icon.png">
+    <link rel="apple-touch-icon" href="/assets/quai-icon.png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="QuAI home">
+        <img src="/assets/quai-icon.png" alt="" width="36" height="36">
+        <span>QuAI</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Desktop writing assistant</p>
+          <h1>QuAI</h1>
+          <p class="lede">
+            AI writing from any app. Select text, press your shortcut, and turn
+            rough writing into a clearer version without breaking your flow.
+          </p>
+          <div class="hero-actions" aria-label="Download options">
+            <a class="button primary" href="https://apps.apple.com/app/id6783869583">View on the Mac App Store</a>
+            <a class="button secondary" href="#download">See Windows setup</a>
+          </div>
+          <p class="availability">
+            macOS 14+ is the primary release target. Windows is available as a
+            signed setup installer.
+          </p>
+        </div>
+
+        <div class="product-visual" aria-label="QuAI correction preview">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>Proofread</strong>
+          </div>
+          <div class="diff-preview">
+            <section>
+              <p class="label">Original</p>
+              <p>I just want to make this email sounds more clear and professional.</p>
+            </section>
+            <section>
+              <p class="label">QuAI</p>
+              <p>I’d like to make this email sound clearer and more professional.</p>
+            </section>
+          </div>
+          <div class="style-strip" aria-hidden="true">
+            <span>Proofread</span>
+            <span>Professional</span>
+            <span>Concise</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Built for repeated use</p>
+          <h2>A quiet desktop utility for everyday writing.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Correct anywhere</h3>
+            <p>Use a global shortcut from Mail, Slack, Chrome, notes, or any app where you can select text.</p>
+          </article>
+          <article>
+            <h3>Review before applying</h3>
+            <p>Compare original and corrected text side by side, then accept, copy, refine, or reject the result.</p>
+          </article>
+          <article>
+            <h3>Custom styles</h3>
+            <p>Proofread, rewrite professionally, shorten, elaborate, translate, or create your own reusable style.</p>
+          </article>
+          <article>
+            <h3>SnapApply shortcuts</h3>
+            <p>Assign a hotkey to a style and apply common corrections in one step without opening the popup.</p>
+          </article>
+          <article>
+            <h3>Gemini or offline</h3>
+            <p>Use Gemini with your own verified API key, or run downloaded Gemma 4 GGUF models locally.</p>
+          </article>
+          <article>
+            <h3>Local-first settings</h3>
+            <p>Manage models, permissions, styles, shortcuts, startup behavior, and language from the desktop app.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="privacy" class="privacy-band">
+        <div>
+          <p class="eyebrow">Privacy by default</p>
+          <h2>Private offline mode. Content-free analytics.</h2>
+        </div>
+        <div class="privacy-points">
+          <p>Offline models run on your device.</p>
+          <p>Gemini is optional and uses your own API key.</p>
+          <p>Anonymous analytics are opt-in and never include selected text, prompts, outputs, images, filenames, API keys, or raw errors.</p>
+          <a href="/privacy/">Read the privacy policy</a>
+        </div>
+      </section>
+
+      <section id="download" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Download</p>
+          <h2>Start with the Mac App Store. Windows setup is next.</h2>
+        </div>
+        <div class="download-grid">
+          <article class="download-card featured-download">
+            <p class="platform">macOS</p>
+            <h3>Mac App Store</h3>
+            <p>Install the primary macOS release from Apple's storefront when the listing is available.</p>
+            <a class="button primary" href="https://apps.apple.com/app/id6783869583">Open App Store</a>
+          </article>
+          <article class="download-card">
+            <p class="platform">Windows</p>
+            <h3>Setup installer</h3>
+            <p>Install QuAI with the exe-based setup file instead of a zip or source download.</p>
+            <a class="button secondary" href="https://github.com/leehack/homebrew-quai/releases/download/v1.7.3/QuAI-windows-x64-setup.exe">Download Windows Setup</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Product support without exposing a personal inbox.</h2>
+        </div>
+        <p>
+          Use the support link on QuAI’s Mac App Store listing for product
+          support and privacy requests. A dedicated product support address can
+          be added here later without changing the rest of the site.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>QuAI</span>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </footer>
+  </body>
+</html>
