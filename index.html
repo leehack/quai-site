@@ -6,17 +6,30 @@
     <title>QuAI - AI writing from any app</title>
     <meta
       name="description"
-      content="QuAI is a lightweight desktop writing assistant for macOS and Windows. Correct, rewrite, translate, and refine selected text with Gemini or private offline models."
+      content="QuAI is a desktop writing assistant for macOS and Windows. Select text in any app, press a shortcut, then proofread, rewrite, translate, or polish it."
     >
     <meta name="theme-color" content="#12141d">
     <meta property="og:title" content="QuAI - AI writing from any app">
-    <meta property="og:description" content="Correct, rewrite, translate, and refine selected text with Gemini or private offline models.">
+    <meta property="og:description" content="Select text in any app, press a shortcut, then proofread, rewrite, translate, or polish it.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://quai.leehack.com/">
     <meta property="og:image" content="https://quai.leehack.com/assets/quai-icon.png">
+    <link rel="canonical" href="https://quai.leehack.com/">
     <link rel="icon" href="/assets/quai-icon.png">
     <link rel="apple-touch-icon" href="/assets/quai-icon.png">
     <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QuAI",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "macOS 14+, Windows",
+        "description": "A desktop writing assistant for proofreading, rewriting, translating, and polishing selected text from any app.",
+        "downloadUrl": "https://github.com/leehack/homebrew-quai/releases/latest",
+        "privacyPolicy": "https://quai.leehack.com/privacy/"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -25,6 +38,7 @@
         <span>QuAI</span>
       </a>
       <nav aria-label="Primary">
+        <a href="#workflow">How it works</a>
         <a href="#features">Features</a>
         <a href="#privacy">Privacy</a>
         <a href="#download">Download</a>
@@ -38,20 +52,30 @@
           <p class="eyebrow">Desktop writing assistant</p>
           <h1>QuAI</h1>
           <p class="lede">
-            AI writing from any app. Select text, press your shortcut, and turn
-            rough writing into a clearer version without breaking your flow.
+            Select text in any app, press a shortcut, and turn rough writing
+            into clear writing without opening a browser tab.
           </p>
           <div class="hero-actions" aria-label="Download options">
-            <a class="button primary" href="https://github.com/leehack/homebrew-quai/releases/download/v1.7.6/QuAI-1.7.6.dmg">Download for macOS</a>
-            <a class="button secondary" href="#download">See Windows setup</a>
+            <a class="button primary" href="https://github.com/leehack/homebrew-quai/releases/latest/download/QuAI-macos.dmg">Download for Mac</a>
+            <a class="button secondary" href="https://github.com/leehack/homebrew-quai/releases/latest/download/QuAI-windows-x64-setup.exe">Download for Windows</a>
+          </div>
+          <div class="trust-row" aria-label="Release details">
+            <span>Works in your apps</span>
+            <span>Review before replacing</span>
+            <span>No account required</span>
           </div>
           <p class="availability">
-            macOS 14+ is the primary release target. Windows is available as a
-            signed setup installer.
+            Mac users open the download and drag QuAI to Applications. Windows
+            users run the setup file and launch QuAI from the Start menu.
           </p>
         </div>
 
         <div class="product-visual" aria-label="QuAI correction preview">
+          <div class="desktop-strip">
+            <span>Mail</span>
+            <span>Slack</span>
+            <strong>QuAI ready in the menu bar</strong>
+          </div>
           <div class="window-bar">
             <span></span>
             <span></span>
@@ -62,49 +86,76 @@
             <section>
               <p class="label">Original</p>
               <p>I just want to make this email sounds more clear and professional.</p>
+              <mark>Select text in any app</mark>
             </section>
             <section>
               <p class="label">QuAI</p>
               <p>I’d like to make this email sound clearer and more professional.</p>
+              <mark>Review, refine, or apply</mark>
             </section>
           </div>
           <div class="style-strip" aria-hidden="true">
             <span>Proofread</span>
             <span>Professional</span>
             <span>Concise</span>
+            <span>Translate</span>
           </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow-section">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Use QuAI without changing apps.</h2>
+        </div>
+        <div class="workflow-grid">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Select text anywhere</h3>
+            <p>Highlight a sentence, paragraph, email draft, chat message, or document section.</p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Press your shortcut</h3>
+            <p>Open QuAI from your keyboard shortcut and choose the writing style you need.</p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Review and apply</h3>
+            <p>Check what changed, refine the result if needed, then copy it or replace the original.</p>
+          </article>
         </div>
       </section>
 
       <section id="features" class="section">
         <div class="section-heading">
           <p class="eyebrow">Built for repeated use</p>
-          <h2>A quiet desktop utility for everyday writing.</h2>
+          <h2>Everything you need for everyday writing.</h2>
         </div>
         <div class="feature-grid">
           <article>
-            <h3>Correct anywhere</h3>
-            <p>Use a global shortcut from Mail, Slack, Chrome, notes, or any app where you can select text.</p>
+            <h3>Proofread and rewrite</h3>
+            <p>Fix grammar, make writing sound more professional, shorten text, or expand rough notes.</p>
           </article>
           <article>
-            <h3>Review before applying</h3>
-            <p>Compare original and corrected text side by side, then accept, copy, refine, or reject the result.</p>
+            <h3>Translate quickly</h3>
+            <p>Turn selected text into another language from the same shortcut you use for proofreading.</p>
           </article>
           <article>
-            <h3>Custom styles</h3>
-            <p>Proofread, rewrite professionally, shorten, elaborate, translate, or create your own reusable style.</p>
+            <h3>Review every change</h3>
+            <p>Compare the original and improved version side by side before replacing anything.</p>
           </article>
           <article>
-            <h3>SnapApply shortcuts</h3>
-            <p>Assign a hotkey to a style and apply common corrections in one step without opening the popup.</p>
+            <h3>One-step shortcuts</h3>
+            <p>Assign your favorite actions to hotkeys when you want proofreading or rewriting to happen instantly.</p>
           </article>
           <article>
-            <h3>Gemini or offline</h3>
-            <p>Use Gemini with your own verified API key, or run downloaded Gemma 4 GGUF models locally.</p>
+            <h3>Your choice of AI</h3>
+            <p>Use online AI with your own key, or download an offline model for private local writing help.</p>
           </article>
           <article>
-            <h3>Local-first settings</h3>
-            <p>Manage models, permissions, styles, shortcuts, startup behavior, and language from the desktop app.</p>
+            <h3>Custom writing styles</h3>
+            <p>Create and reorder your own styles so QuAI matches the way you write every day.</p>
           </article>
         </div>
       </section>
@@ -112,12 +163,12 @@
       <section id="privacy" class="privacy-band">
         <div>
           <p class="eyebrow">Privacy by default</p>
-          <h2>Private offline mode. Content-free analytics.</h2>
+          <h2>Your writing stays under your control.</h2>
         </div>
         <div class="privacy-points">
-          <p>Offline models run on your device.</p>
-          <p>Gemini is optional and uses your own API key.</p>
-          <p>Anonymous analytics are opt-in and never include selected text, prompts, outputs, images, filenames, API keys, or raw errors.</p>
+          <p>Offline mode can process writing on your device.</p>
+          <p>Online AI is optional and only works after you add your own key.</p>
+          <p>Usage analytics are off by default and never include your writing.</p>
           <a href="/privacy/">Read the privacy policy</a>
         </div>
       </section>
@@ -125,20 +176,34 @@
       <section id="download" class="section">
         <div class="section-heading">
           <p class="eyebrow">Download</p>
-          <h2>Download QuAI for macOS or Windows.</h2>
+          <h2>Install QuAI in a few minutes.</h2>
         </div>
         <div class="download-grid">
           <article class="download-card featured-download">
-            <p class="platform">macOS</p>
-            <h3>Developer ID DMG</h3>
-            <p>Install the signed and notarized macOS release directly from the public download.</p>
-            <a class="button primary" href="https://github.com/leehack/homebrew-quai/releases/download/v1.7.6/QuAI-1.7.6.dmg">Download macOS DMG</a>
+            <p class="platform">Mac</p>
+            <h3>Download for macOS</h3>
+            <ol class="install-steps">
+              <li>Download the Mac file.</li>
+              <li>Open it and drag QuAI to Applications.</li>
+              <li>Launch QuAI and follow the setup guide.</li>
+            </ol>
+            <div class="download-actions">
+              <a class="button primary" href="https://github.com/leehack/homebrew-quai/releases/latest/download/QuAI-macos.dmg">Download for Mac</a>
+              <a class="text-link" href="https://github.com/leehack/homebrew-quai/releases/latest">See release notes</a>
+            </div>
           </article>
           <article class="download-card">
             <p class="platform">Windows</p>
-            <h3>Setup installer</h3>
-            <p>Install QuAI with the exe-based setup file instead of a zip or source download.</p>
-            <a class="button secondary" href="https://github.com/leehack/homebrew-quai/releases/latest/download/QuAI-windows-x64-setup.exe">Download Windows Setup</a>
+            <h3>Download for Windows</h3>
+            <ol class="install-steps">
+              <li>Download the Windows setup file.</li>
+              <li>Run the installer.</li>
+              <li>Open QuAI from the Start menu or system tray.</li>
+            </ol>
+            <div class="download-actions">
+              <a class="button secondary" href="https://github.com/leehack/homebrew-quai/releases/latest/download/QuAI-windows-x64-setup.exe">Download for Windows</a>
+              <a class="text-link" href="https://github.com/leehack/homebrew-quai/releases/latest">See release notes</a>
+            </div>
           </article>
         </div>
       </section>
@@ -146,14 +211,13 @@
       <section id="contact" class="contact-band">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Product support without exposing a personal inbox.</h2>
+          <h2>Need help with setup or usage?</h2>
         </div>
         <p>
-          Use the public download repository's issue tracker for product
-          support and privacy requests. A dedicated product support address can
-          be added here later without changing the rest of the site.
+          Open a support issue and describe what happened. Please do not include
+          private writing, screenshots with sensitive content, or API keys.
         </p>
-        <a class="button secondary" href="https://github.com/leehack/homebrew-quai/issues">Open Support Issues</a>
+        <a class="button secondary" href="https://github.com/leehack/homebrew-quai/issues">Get Support</a>
       </section>
     </main>
 
