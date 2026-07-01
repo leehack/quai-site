@@ -1,19 +1,20 @@
 :root {
   color-scheme: dark;
-  --bg: #11130f;
-  --bg-soft: #171a15;
-  --surface: #1b1f1a;
-  --surface-2: #252b25;
-  --text: #edf0e8;
-  --muted: #b9c1b2;
-  --quiet: #899284;
-  --line: #3d473d;
-  --accent: #8fbc8f;
+  --bg: #12141d;
+  --bg-soft: #171a25;
+  --surface: #1b1d2a;
+  --surface-2: #2b2e3f;
+  --text: #e6e9f5;
+  --muted: #adb4ca;
+  --quiet: #858da5;
+  --line: #454b60;
+  --accent: #6478dc;
   --accent-ink: #ffffff;
   --success: #2e7d32;
-  --warm: #e2c36f;
-  --coral: #d97866;
-  --steel: #9ab0d1;
+  --warm: #e7c978;
+  --coral: #df7a68;
+  --aqua: #91efe6;
+  --steel: #8ea0f0;
   --shadow: 0 26px 70px rgba(0, 0, 0, 0.34);
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -173,8 +174,8 @@ nav a:hover,
 
 .button.primary {
   border-color: transparent;
-  background: #e8efdf;
-  color: #141712;
+  background: var(--accent);
+  color: var(--accent-ink);
 }
 
 .button.secondary {
@@ -211,9 +212,9 @@ nav a:hover,
   align-items: center;
   min-height: 30px;
   padding: 0 10px;
-  border: 1px solid rgba(143, 188, 143, 0.34);
+  border: 1px solid rgba(100, 120, 220, 0.42);
   border-radius: 999px;
-  background: rgba(143, 188, 143, 0.08);
+  background: rgba(100, 120, 220, 0.12);
   color: var(--muted);
   font-size: 0.82rem;
 }
@@ -221,7 +222,7 @@ nav a:hover,
 .product-visual {
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(27, 31, 26, 0.96);
+  background: rgba(27, 29, 42, 0.96);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -232,8 +233,8 @@ nav a:hover,
   gap: 8px;
   align-items: center;
   padding: 10px 14px;
-  border-bottom: 1px solid rgba(61, 71, 61, 0.75);
-  background: #10130f;
+  border-bottom: 1px solid rgba(69, 75, 96, 0.75);
+  background: #10121a;
   color: var(--quiet);
   font-size: 0.78rem;
 }
@@ -264,7 +265,7 @@ nav a:hover,
   width: 12px;
   height: 12px;
   border-radius: 999px;
-  background: #666a61;
+  background: #6d748e;
 }
 
 .window-bar span:first-child {
@@ -276,7 +277,7 @@ nav a:hover,
 }
 
 .window-bar span:nth-child(3) {
-  background: var(--steel);
+  background: var(--aqua);
 }
 
 .window-bar strong {
@@ -323,8 +324,8 @@ nav a:hover,
   justify-self: start;
   padding: 7px 9px;
   border-radius: 7px;
-  background: rgba(226, 195, 111, 0.14);
-  color: var(--warm);
+  background: rgba(145, 239, 230, 0.12);
+  color: var(--aqua);
   font-size: 0.78rem;
 }
 
@@ -422,7 +423,7 @@ nav a:hover,
 }
 
 .featured-download {
-  background: rgba(143, 188, 143, 0.11);
+  background: rgba(100, 120, 220, 0.12);
 }
 
 .install-steps {
